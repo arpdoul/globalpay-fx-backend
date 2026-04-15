@@ -5,7 +5,7 @@ import * as dotenv from "dotenv";
 dotenv.config();
 
 const app = express();
-app.use(cors({ origin: "https://globalpay-fx-frontend.vercel.app" }));
+app.use(cors({ origin: ["https://globalpay-fx-frontend.vercel.app", "https://af-arpdoul-8887s-projects.vercel.app"] }));
 app.use(express.json());
 
 const client = initiateDeveloperControlledWalletsClient({
